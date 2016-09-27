@@ -27,3 +27,23 @@ let product1 = {
 	}
 }
 console.log("product1.calculateTax()\n" + product1.calculateTax());
+//***********************************************************
+//LOOPING FOR LOOPS
+let animals:string[] = ["lion", "tiger", "bear"];
+let animals2 = {
+	tiger: "tiger",
+	bear: "big bear",
+	puppy: "Very cute"
+}
+
+for (let key in animals){
+	console.log(`(for..in loop with array) index: ${key} value: ${animals[key]}`);
+}
+for (let key in animals2){
+	console.log(`(for in loop with object)   index: ${key} value: ${animals2[key]}`);
+}
+
+//for..of just for arrays
+for (let value of animals){
+	console.log("for..of loop with array:   " +  value);
+}

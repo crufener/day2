@@ -19,3 +19,19 @@ var product1 = {
     }
 };
 console.log("product1.calculateTax()\n" + product1.calculateTax());
+var animals = ["lion", "tiger", "bear"];
+var animals2 = {
+    tiger: "tiger",
+    bear: "big bear",
+    puppy: "Very cute"
+};
+for (var key in animals) {
+    console.log("(for..in loop with array) index: " + key + " value: " + animals[key]);
+}
+for (var key in animals2) {
+    console.log("(for in loop with object)   index: " + key + " value: " + animals2[key]);
+}
+for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
+    var value = animals_1[_i];
+    console.log("for..of loop with array:   " + value);
+}
