@@ -35,3 +35,12 @@ for (var _i = 0, animals_1 = animals; _i < animals_1.length; _i++) {
     var value = animals_1[_i];
     console.log("for..of loop with array:   " + value);
 }
+function getRandom() {
+    return Math.random();
+}
+function getRandomLessthan(max) {
+    return Math.random() * max;
+}
+function getRandomMinMax(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}

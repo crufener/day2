@@ -47,3 +47,21 @@ for (let key in animals2){
 for (let value of animals){
 	console.log("for..of loop with array:   " +  value);
 }
+
+
+//random numbers
+
+// returns random number between 0 to 1
+function getRandom(){
+    return Math.random();
+}
+
+// returns a random number between 0 to max value
+function getRandomLessthan(max){
+    return Math.random() * max;
+}
+
+// returns a number between min value to max value. does not include max value
+function getRandomMinMax(min: number, max: number){
+    return Math.floor(Math.random() * (max - min)) + min;
+}
